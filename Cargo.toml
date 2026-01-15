@@ -1,0 +1,27 @@
+[package]
+name = "cs2-skin-changer"
+version = "1.0.0"
+edition = "2024"
+description = "CS2 Skin Changer - Standalone skin changer for Counter-Strike 2 on Linux"
+authors = ["razorbill"]
+
+[dependencies]
+bytemuck = "1.24"
+env_logger = { version = "0.11", default-features = false }
+log = "0.4"
+nix = { version = "0.30", features = ["ioctl"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+strum = { version = "0.27", features = ["derive"] }
+toml = "0.9"
+ureq = { version = "3.0", features = ["json"] }
+
+[profile.dev]
+overflow-checks = false
+
+[profile.release]
+lto = true
+debug = true
+
+[features]
+read-only = []
