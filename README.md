@@ -1,6 +1,6 @@
 # CS2 Skin Changer
 
-A standalone skin changer for Counter-Strike 2 on Linux. This is a minimal extraction of the skin changer feature from the deadlocked project.
+A standalone skin changer for Counter-Strike 2 on Linux. This is a minimal extraction of the offsets and sig dump feature from the deadlocked project.
 
 ## Features
 
